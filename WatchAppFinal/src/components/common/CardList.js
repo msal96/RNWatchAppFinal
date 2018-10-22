@@ -1,17 +1,22 @@
-import React from 'react'
-import { ScrollView } from 'react-native'
-
+import React, { Component } from 'react'
+import { withNavigation } from 'react-navigation'
+import { ScrollView, TouchableOpacity } from 'react-native'
 import Card from './Card'
 
-const CardList = () => {
+class CardList extends Component {
+  render () {
+    const { navigation, data } = this.props
+    console.log('[CardListProps]', this.props)
     return (
-        <ScrollView>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-        </ScrollView>
+      <ScrollView>
+        {data.map((item, index) =>
+          <TouchableOpacity key={index} onPress={() => navigation.navigate('Details', { model: item })}>
+            <Card brand={item.Brand} model={item.Model} price={item.Price} />
+          </TouchableOpacity>
+        )}
+      </ScrollView>
     )
+  }
 }
 
-export default CardList
+export default withNavigation(CardList)

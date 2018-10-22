@@ -9,7 +9,7 @@ import { LearnScreen } from './src/screens/LearnScreen'
 import { ProfileScreen } from './src/screens/ProfileScreen'
 
 export default class App extends React.Component {
-  render() {
+  render () {
     return (
       <StackNavigator />
     )
