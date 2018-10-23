@@ -1,6 +1,6 @@
 import React from 'react'
 import { withNavigation } from 'react-navigation'
-import { ScrollView, Text } from 'react-native'
+import { ScrollView } from 'react-native'
 
 import ImageSwiper from '../components/details.components/ImageSwiper'
 import NameInfo from '../components/details.components/NameInfo'

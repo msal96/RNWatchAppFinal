@@ -1,17 +1,48 @@
 import React from 'react'
-import { View, Image, Text } from 'react-native'
+import styled from 'styled-components'
+import { View, Image, Text, Dimensions } from 'react-native'
+
+// const {height, width} = Dimensions.get('window')
 
 const Chronographs = () => {
   return (
-    <View style={{flex: 1, alignItems: 'center', backgroundColor: 'white'}}>
-      <Image 
-        style={{width: 100, height: 100}}
+    <Wrapper>
+      <Photo 
         source={{uri: 'https://icdn6.digitaltrends.com/image/ticwatch-pro-wrist-suit-1500x999.jpg'}}
       />
-      <Text>Our Favorite Chronographs</Text>
-      <Text>See All ></Text>
-    </View>
+      <Heading>Our Favorite Chronographs</Heading>
+      <Subheading>See All 10 ></Subheading>
+    </Wrapper>
   )
 }
+
+const Wrapper = styled(View)`
+  flex: 1;
+  background-color: white;
+  border-radius: 20;
+  margin-horizontal: 20;
+  overflow: hidden;
+`
+const Photo = styled(Image)`
+  height: 300;
+  width: 100%;
+`
+const Heading = styled(Text)`
+  align-items: flex-start;
+  color: #7325FB;
+  margin-left: 20;
+  font-size: 25;
+  width: 70%;
+  padding-top: 15;
+  padding-bottom: 10;
+  font-family: Graphik-Medium;
+`
+const Subheading = styled(Text)`
+  align-items: flex-start;
+  margin-left: 20;
+  padding-bottom: 15;
+  font-size: 15;
+  font-family: Graphik-Medium;
+`
 
 export default Chronographs
