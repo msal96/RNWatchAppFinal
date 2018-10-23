@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { withNavigation } from 'react-navigation'
 import styled from 'styled-components'
-import { View, PixelRatio, TouchableOpacity } from 'react-native'
+import { View, Dimensions, TouchableOpacity } from 'react-native'
+
+const { width, height } = Dimensions.get('window')
 
 import Card from './Card'
 
@@ -21,8 +23,8 @@ class CardList extends Component {
                 brand={item.Brand} 
                 model={item.Model} 
                 price={item.Price} 
-                width={500 / PixelRatio.get()}
-                height={600 / PixelRatio.get()}
+                width={width/2.5}
+                height={height/2.5}
               />
             </TouchableOpacity>
           )}
