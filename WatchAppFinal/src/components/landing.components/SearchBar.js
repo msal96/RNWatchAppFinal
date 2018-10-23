@@ -1,24 +1,33 @@
 import React from 'react'
-import { TextInput, View } from 'react-native'
+import { TextInput, View, Text } from 'react-native'
 import styled from 'styled-components'
+
+import Icon from 'react-native-vector-icons/FontAwesome';
+const myIcon = (<Icon name="search" size={15} color="#1a1a1a" />)
 
 const SearchBar = () => {
   return (
     <SearchBarWrapper>
-      <Search placeholder='Search' />
+      <SearchIcon>{myIcon}</SearchIcon>
+      <Search placeholder={'Search'} placeholderTextColor='black'/>
     </SearchBarWrapper>
+
   )
 }
 
 const SearchBarWrapper = styled(View)`
-  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 25%;
+  margin-vertical: 20;
+  margin-horizontal: 20;
 `
 const Search = styled(TextInput)`
-  &::placeholder {
-    color: black;
-  } 
-  padding: 10px;
-  margin: 10px;
-  font-size: 16px;
+  font-size: 18;
+  padding-left: 5;
+`
+const SearchIcon = styled(Text)`
+  padding-top: 2;
 `
 export default SearchBar

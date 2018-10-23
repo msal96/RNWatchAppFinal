@@ -8,7 +8,7 @@ const Chronographs = () => {
   return (
     <Wrapper>
       <Photo 
-        source={{uri: 'https://icdn6.digitaltrends.com/image/ticwatch-pro-wrist-suit-1500x999.jpg'}}
+        source={require('../../../assets/images/chronographs.png')}
       />
       <Heading>Our Favorite Chronographs</Heading>
       <Subheading>See All 10 ></Subheading>
@@ -19,7 +19,7 @@ const Chronographs = () => {
 const Wrapper = styled(View)`
   flex: 1;
   background-color: white;
-  border-radius: 20;
+  border-radius: 10;
   margin-horizontal: 20;
   overflow: hidden;
 
