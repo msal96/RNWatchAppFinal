@@ -1,14 +1,14 @@
 import React from 'react'
 import { TextInput, View, Text } from 'react-native'
 import styled from 'styled-components'
+import Icon from 'react-native-vector-icons/FontAwesome'
 
-import Icon from 'react-native-vector-icons/FontAwesome';
-const myIcon = (<Icon name="search" size={15} color="#1a1a1a" />)
+let icon = (<Icon name="search" size={15} color="#1a1a1a" />)
 
 const SearchBar = () => {
   return (
     <SearchBarWrapper>
-      <SearchIcon>{myIcon}</SearchIcon>
+      <SearchIcon>{icon}</SearchIcon>
       <Search placeholder={'Search'} placeholderTextColor='black'/>
     </SearchBarWrapper>
 
