@@ -17,7 +17,10 @@ class DetailsScreen extends React.Component {
     return (
       <ScrollView>
         <ImageSwiper photos={model.Photos} />
-        <NameInfo />
+        <NameInfo
+          model={model.Model}
+          brand={model.Brand}
+        />
         <PriceInfo />
         <InfoSwiper />
         <SimilarWatches />
