@@ -56,6 +56,8 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Graphik-Medium.ttf</string>
+		<string>Graphik-Regular.ttf</string>
+		<string>Graphik-Light.ttf</string>
 	</array>
 </dict>
 </plist>

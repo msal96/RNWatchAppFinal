@@ -19,22 +19,28 @@ export default class LandingScreen extends React.Component {
   }
   
   render () {
-    return this.state.data ? (
-      <ScrollView>
+    return this.state.data 
+    ? (<Wrapper>
         <SearchBar />
         <Chronographs />
         <RecommendedHeading>Recommended</RecommendedHeading>
         <CardList data={this.state.data} />
         <NavBar />
-      </ScrollView>
-    ) : <View><Text>Loading ...</Text></View>
+      </Wrapper>
+      ) 
+    : <View>
+        <Text>Loading ...</Text>
+      </View>
   }
 }
 
+const Wrapper = styled(ScrollView)`
+  background-color: white;
+`
 const RecommendedHeading = styled(Text)`
   font-size: 25;
   padding-left: 35;
-  margin-top: 10;
-  margin-bottom: 10;
+  margin-top: 25;
+  margin-bottom: 15;
   font-family: Graphik-Medium;
 `

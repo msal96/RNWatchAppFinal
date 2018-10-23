@@ -38,6 +38,8 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		C3D7699DFED245D9ABDA10DA /* Graphik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFA8656E6AEF44B89CB45705 /* Graphik-Medium.ttf */; };
+		2BDF60920289491E993E7091 /* Graphik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DB9F824EB1641FB994BB139 /* Graphik-Regular.ttf */; };
+		872AB217D9954089BFB3ED4F /* Graphik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 914B74C63A4C482C8BE1693F /* Graphik-Light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -344,6 +346,8 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		EFA8656E6AEF44B89CB45705 /* Graphik-Medium.ttf */ = {isa = PBXFileReference; name = "Graphik-Medium.ttf"; path = "../assets/fonts/Graphik-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0DB9F824EB1641FB994BB139 /* Graphik-Regular.ttf */ = {isa = PBXFileReference; name = "Graphik-Regular.ttf"; path = "../assets/fonts/Graphik-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		914B74C63A4C482C8BE1693F /* Graphik-Light.ttf */ = {isa = PBXFileReference; name = "Graphik-Light.ttf"; path = "../assets/fonts/Graphik-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -609,6 +613,8 @@
 			isa = "PBXGroup";
 			children = (
 				EFA8656E6AEF44B89CB45705 /* Graphik-Medium.ttf */,
+				0DB9F824EB1641FB994BB139 /* Graphik-Regular.ttf */,
+				914B74C63A4C482C8BE1693F /* Graphik-Light.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1061,6 +1067,8 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				C3D7699DFED245D9ABDA10DA /* Graphik-Medium.ttf in Resources */,
+				2BDF60920289491E993E7091 /* Graphik-Regular.ttf in Resources */,
+				872AB217D9954089BFB3ED4F /* Graphik-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

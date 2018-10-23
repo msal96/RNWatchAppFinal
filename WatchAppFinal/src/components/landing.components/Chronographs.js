@@ -22,6 +22,9 @@ const Wrapper = styled(View)`
   border-radius: 20;
   margin-horizontal: 20;
   overflow: hidden;
+
+  border-color: #e3e3e3;
+  border-bottom-width: 5;
 `
 const Photo = styled(Image)`
   height: 300;
