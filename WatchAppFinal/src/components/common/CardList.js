@@ -13,22 +13,22 @@ class CardList extends Component {
     console.log('[CardListProps]', this.props)
 
     return (
-        <Wrapper>
-          {data.map((item, index) =>
-            <TouchableOpacity 
-              key={index} 
-              onPress={() => navigation.navigate('Details', { model: item })}
-            >
-              <Card 
-                brand={item.Brand} 
-                model={item.Model} 
-                price={item.Price} 
-                width={width/2.5}
-                height={height/2.5}
-              />
-            </TouchableOpacity>
-          )}
-        </Wrapper>
+      <Wrapper>
+        {data.map((item, index) => (
+          <TouchableOpacity
+            key={index}
+            onPress={() => navigation.navigate('Details', { model: item })}
+          >
+            <Card
+              brand={item.Brand}
+              model={item.Model}
+              price={item.Price}
+              width={width / 2.5}
+              height={height / 2.5}
+            />
+          </TouchableOpacity>
+        ))}
+      </Wrapper>
     )
   }
 }

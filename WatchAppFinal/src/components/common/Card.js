@@ -13,8 +13,8 @@ const Card = ({
   width,
   height
 }) => (
-  <CardWrapper 
-    width={width} 
+  <CardWrapper
+    width={width}
     height={height}
   >
     <LikeButton>{icon}</LikeButton>

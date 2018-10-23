@@ -7,6 +7,7 @@ import { ShopScreen } from './src/screens/ShopScreen'
 import { DiscoverScreen } from './src/screens/DiscoverScreen'
 import { LearnScreen } from './src/screens/LearnScreen'
 import { ProfileScreen } from './src/screens/ProfileScreen'
+import { RightHeader } from './src/components/details.components/RightHeader'
 
 export default class App extends React.Component {
   render () {
@@ -19,7 +20,12 @@ export default class App extends React.Component {
 const StackNavigator = createStackNavigator(
   {
     Landing: LandingScreen,
-    Details: DetailsScreen,
+    Details: {
+      screen: DetailsScreen,
+      navigationOptions: () => ({
+        headerRight: <RightHeader />
+      })
+    },
     Shop: ShopScreen,
     Discover: DiscoverScreen,
     Learn: LearnScreen,

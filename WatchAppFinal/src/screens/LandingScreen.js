@@ -14,7 +14,7 @@ export default class LandingScreen extends React.Component {
   }
 
   componentDidMount () {
-    axios.get('https://cz36patn60.execute-api.us-east-1.amazonaws.com/WatchesAPI/products')
+    axios.get('https://ph2l46wsvk.execute-api.us-east-1.amazonaws.com/WatchesAPI/products')
       .then(result => this.setState({data: result.data}))
   }
   
