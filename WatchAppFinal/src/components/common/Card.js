@@ -6,7 +6,7 @@ import { withNavigation } from 'react-navigation'
 const Card = ({
   brand,
   model,
-  price,
+  // price,
   width,
   height
 }) => (
@@ -19,7 +19,7 @@ const Card = ({
     />
     { brand ? <BrandName> { brand } </BrandName> : null}
     { model ? <ModelName> { model } </ModelName> : null}
-    { price ? <Price> { price } </Price> : null}
+    <Price> { '$24,372' } </Price>
   </CardWrapper>
 )
 
@@ -49,11 +49,14 @@ const ModelName = styled(Text)`
   font-size: 12;
   line-height: 15;
   align-self: center;
-  font-family: Graphik-Medium;
+  font-family: Graphik-Regular;
 `
 const Price = styled(Text)`
-  color: #A9A9A9;
-  align-self: flex-start;
-  margin: 0 10px;
+  color: #7325FB;
+  font-family: Graphik-Medium;
+  font-size: 18;
+  letter-spacing: 0.5;
+  align-self: center;
+  padding-vertical: 20;
 `
 export default withNavigation(Card)

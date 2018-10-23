@@ -22,7 +22,7 @@ class CardList extends Component {
                 model={item.Model} 
                 price={item.Price} 
                 width={500 / PixelRatio.get()}
-                height={600 / PixelRatio.get()}
+                height={700 / PixelRatio.get()}
               />
             </TouchableOpacity>
           )}

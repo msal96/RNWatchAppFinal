@@ -45,7 +45,7 @@ const Subheading = styled(Text)`
   margin-left: 20;
   padding-bottom: 15;
   font-size: 15;
-  font-family: Graphik-Medium;
+  font-family: Graphik-Regular;
 `
 
 export default Chronographs
