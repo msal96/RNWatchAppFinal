@@ -29,6 +29,7 @@ const InfoSwiper = () => {
 const SwiperWrapper = styled(View)`
   width: ${width};
   height: 305;
+  padding-top: 30;
   display: flex;
   background-color: #FFFFFF;
 `
