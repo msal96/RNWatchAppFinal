@@ -21,7 +21,7 @@ class DetailsScreen extends React.Component {
           model={model.Model}
           brand={model.Brand}
         />
-        <PriceInfo />
+        <PriceInfo price={model.Price} />
         <InfoSwiper />
         <SimilarWatches />
         <Guarantee />

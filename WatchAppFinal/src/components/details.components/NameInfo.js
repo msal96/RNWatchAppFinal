@@ -53,7 +53,7 @@ const LimitedWrapper = styled(View)`
 `
 const LimitedText = styled(Text)`
   font-size: 16px;
-  color: #9014FE;
+  color: #7301FF;
 `
 export default NameInfo
 250
