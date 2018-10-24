@@ -13,6 +13,8 @@ class InfoSwiper extends Component {
   }
 
 render () {
+  const { caseInfo, bracelet, description } = this.props
+  console.log('[InfoSwiper]', caseInfo, bracelet, description)
   return (
     <SwiperWrapper>
       <SwiperButtonsView index={this.state.index} />
@@ -21,7 +23,7 @@ render () {
         showsPagination={false}
         onIndexChanged={(idx) => this.setState({index: idx})}>
         <BasicInfoElement />
-        <FeaturesElement />
+        <FeaturesElement description={description} />
         <TheBrandElement />
       </Swiper>
     </SwiperWrapper>
