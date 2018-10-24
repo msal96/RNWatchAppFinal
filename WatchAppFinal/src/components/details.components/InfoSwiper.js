@@ -18,6 +18,7 @@ render () {
       <SwiperButtonsView index={this.state.index} />
       <Swiper
         loop={false}
+        showsPagination={false}
         onIndexChanged={(idx) => this.setState({index: idx})}>
         <BasicInfoElement />
         <FeaturesElement />
