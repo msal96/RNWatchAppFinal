@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { View, Image, Text, Dimensions } from 'react-native'
-
-// const {height, width} = Dimensions.get('window')
+import { View, Image, Text } from 'react-native'
 
 const Chronographs = () => {
   return (
@@ -21,10 +19,7 @@ const Wrapper = styled(View)`
   background-color: white;
   border-radius: 10;
   margin-horizontal: 20;
-  overflow: hidden;
-
-  border-color: #e3e3e3;
-  border-bottom-width: 5;
+  box-shadow: 0 10px 5px lightgrey;
 `
 const Photo = styled(Image)`
   height: 300;

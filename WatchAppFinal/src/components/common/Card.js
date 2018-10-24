@@ -4,7 +4,7 @@ import { Image, Text, View } from 'react-native'
 import { withNavigation } from 'react-navigation'
 import Icon from 'react-native-vector-icons/FontAwesome'
 
-let icon = (<Icon name="heart" style='regular' size={25} color="#b6b6b6" />)
+let icon = (<Icon name="heart-o" style='regular' size={25} color="#b6b6b6" />)
 
 const Card = ({
   brand,
