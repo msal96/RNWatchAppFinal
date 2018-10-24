@@ -19,7 +19,7 @@ const SwiperButtonsView = props => {
           </ButtonView>
           <ButtonViewRight>
             <DisabledButton>
-              <DisabledText>Features</DisabledText>
+              <DisabledText>FEATURES</DisabledText>
             </DisabledButton>
           </ButtonViewRight>
         </ButtonsWrapperBasic>
@@ -29,7 +29,7 @@ const SwiperButtonsView = props => {
             <DisabledText>BASIC INFO</DisabledText>
           </DisabledButton>
           <ActiveButton>
-            <ActiveText>Features</ActiveText>
+            <ActiveText>FEATURES</ActiveText>
           </ActiveButton>
           <DisabledButton>
             <DisabledText>THE BRAND</DisabledText>
@@ -60,6 +60,7 @@ const SwiperButtonsView = props => {
 
 const ButtonsWrapper = styled(View)`
   width: 82%;
+  margin-bottom: 35;
   align-self: center;
 `
 const ButtonsWrapperBasic = styled(View)`
