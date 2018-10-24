@@ -8,35 +8,49 @@ let { width } = Dimensions.get('window')
 const PriceInfo = (props) => {
   return (
     <Wrapper>
-        <LeftView>
-          <PriceDetail>
-            <Currency>$</Currency>
-            <Price>{ props.price }</Price>
-          </PriceDetail>
+        <Content>
+          <LeftView>
+            <PriceDetail>
+              <Currency>$</Currency>
+              <Price>{ props.price }</Price>
+            </PriceDetail>
 
-          <PriceDetail>
-            <Icon name='arrow-down' size={14} color='#646464' />
-            <PriceEvolution> $3038 </PriceEvolution>
-          </PriceDetail>
-        </LeftView>
+            <PriceDetail>
+              <Icon name='arrow-down' size={14} color='#646464' />
+              <PriceEvolution> $3038 </PriceEvolution>
+            </PriceDetail>
+          </LeftView>
 
-        <RightViewButton>
-          <Label> Add + </Label>
-        </RightViewButton>
+          <RightViewButton>
+            <Label> Add + </Label>
+          </RightViewButton>
+        </Content>
+
+        <Separator />
     </Wrapper>
   )
 }
 
 const Wrapper = styled(View)`
-  width: ${width}
+  width: ${width};
   height: 87.6;
   background-color: #FFFFFF;
+  padding-horizontal: 35;
   display: flex;
-  justify-content: center;
-  padding-horizontal: 30;
+  position: relative;
   justify-content: space-between;
+`
+const Content = styled(View)`
+  top: 25;
+  display: flex;
   flex-direction: row;
+  justify-content: space-between;
+`
+const Separator = styled(View)`
+  width: 100%;
   align-self: center;
+  border-bottom-width: 1px;
+  border-bottom-color: black;
 `
 const LeftView = styled(View)`
   flex-direction: column;
