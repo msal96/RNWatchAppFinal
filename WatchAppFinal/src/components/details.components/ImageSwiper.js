@@ -2,6 +2,7 @@ import React from 'react'
 import { View, Image } from 'react-native'
 import styled from 'styled-components'
 import Swiper from 'react-native-swiper'
+
 const ImageSwiper = props => {
   return (
     <SwiperWrapper>
@@ -15,6 +16,7 @@ const ImageSwiper = props => {
     </SwiperWrapper>
   )
 }
+
 const SwiperWrapper = styled(View)`
   display: flex;
   height: 322;  
@@ -29,4 +31,5 @@ const SwiperImage = styled(Image)`
   width: 145;
   height: 247;
 `
+
 export default ImageSwiper
