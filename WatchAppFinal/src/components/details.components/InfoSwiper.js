@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { View, Dimensions } from 'react-native'
 import styled from 'styled-components'
 import Swiper from 'react-native-swiper'
@@ -7,24 +7,25 @@ import FeaturesElement from './FeaturesElement'
 import TheBrandElement from './TheBrandElement'
 import SwiperButtonsView from './SwiperButtonsView'
 let { width } = Dimensions.get('window')
-const InfoSwiper = () => {
-  const renderPagination = (index, total, context) => {
-    return (
-      <SwiperButtonsView index={index} />
-    )
+class InfoSwiper extends Component {
+  state = {
+    index: 0
   }
+
+render () {
   return (
     <SwiperWrapper>
+      <SwiperButtonsView index={this.state.index} />
       <Swiper
         loop={false}
-        renderPagination={renderPagination}
-        paginationStyle={{ bottom: 15 }}>
+        onIndexChanged={(idx) => this.setState({index: idx})}>
         <BasicInfoElement />
         <FeaturesElement />
         <TheBrandElement />
       </Swiper>
     </SwiperWrapper>
   )
+}
 }
 const SwiperWrapper = styled(View)`
   width: ${width};
