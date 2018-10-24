@@ -1,20 +1,21 @@
 import React from 'react'
-import { Text, View, Image } from 'react-native'
+import { View, Image } from 'react-native'
 import styled from 'styled-components'
 import Swiper from 'react-native-swiper'
 const ImageSwiper = props => {
-  console.log('SwiperPhotos:', props.photos)
   return (
-    <SwiperWrapper activeDotColor='#1E00A0'>
-      {props.photos.map((url, index) => (
-        <ImageWrapper>
-          <SwiperImage source={{ uri: url }} />
-        </ImageWrapper>
-      ))}
+    <SwiperWrapper>
+      <Swiper activeDotColor='#1E00A0'>
+        {props.photos.map((url, index) => (
+          <ImageWrapper key={index}>
+            <SwiperImage source={{ uri: url }} />
+          </ImageWrapper>
+        ))}
+      </Swiper>
     </SwiperWrapper>
   )
 }
-const SwiperWrapper = styled(Swiper)`
+const SwiperWrapper = styled(View)`
   display: flex;
   height: 322;  
   padding: 5px;
