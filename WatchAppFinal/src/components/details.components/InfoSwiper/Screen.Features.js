@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { View, Text } from 'react-native'
+import { ScrollView, Text } from 'react-native'
 
 const FeaturesScreen = (props) => {
   return (
@@ -12,7 +12,7 @@ const FeaturesScreen = (props) => {
     </Wrapper>
   )
 }
-const Wrapper = styled(View)`
+const Wrapper = styled(ScrollView)`
   width: 82%;
   height: 100%;
   align-self: center;

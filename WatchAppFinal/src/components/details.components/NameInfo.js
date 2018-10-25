@@ -51,13 +51,17 @@ const SerialNumber = styled(Text)`
 `
 const Label = styled(View)`
   position: absolute;
+  margin-top: 10;
   right: 14;
   background-color: #FFFFFF;
-  padding-top: 5;  
+  box-shadow: 0 10px 5px lightgrey;
 `
 const LabelText = styled(Text)`
-  font-size: 16px;
+  font-size: 11px;
   color: #7301FF;
+  font-family: Graphik-Medium;
+  text-transform: uppercase;
+  paddingHorizontal: 5;
 `
 
 export default NameInfo

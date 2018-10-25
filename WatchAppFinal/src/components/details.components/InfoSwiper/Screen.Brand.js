@@ -12,6 +12,5 @@ const Wrapper = styled(View)`
   width: 82%;
   height: 100%;
   align-self: center;
-  background-color: lightgrey
 `
 export default BrandScreen
