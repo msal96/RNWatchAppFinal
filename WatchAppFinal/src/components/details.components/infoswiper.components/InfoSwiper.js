@@ -3,10 +3,10 @@ import { View, Dimensions } from 'react-native'
 import styled from 'styled-components'
 import Swiper from 'react-native-swiper'
 
-import BasicInfoElement from './BasicInfoElement'
-import FeaturesElement from './FeaturesElement'
-import TheBrandElement from './TheBrandElement'
-import SwiperButtonsView from './SwiperButtonsView'
+import BasicInfoScreen from './Screen.BasicInfo'
+import FeaturesScreen from './Screen.Features'
+import BrandScreen from './Screen.Brand'
+import Pagination from './Pagination'
 
 let { width } = Dimensions.get('window')
 
@@ -18,22 +18,23 @@ class InfoSwiper extends Component {
   render () {
     const { caseInfo, bracelet, description } = this.props
     return (
-      <SwiperWrapper>
-        <SwiperButtonsView index={this.state.index} />
+      <Wrapper>
+        <Pagination index={this.state.index} />
         <Swiper
           loop={false}
           showsPagination={false}
-          onIndexChanged={(idx) => this.setState({index: idx})}>
-          <BasicInfoElement />
-          <FeaturesElement description={description} />
-          <TheBrandElement />
+          onIndexChanged={(idx) => this.setState({index: idx})}
+        >
+          <BasicInfoScreen />
+          <FeaturesScreen description={description} />
+          <BrandScreen />
         </Swiper>
-      </SwiperWrapper>
+      </Wrapper>
     )
   }
 }
 
-const SwiperWrapper = styled(View)`
+const Wrapper = styled(View)`
   width: ${width};
   height: 305;
   padding-top: 30;

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { View, Text } from 'react-native'
 
-const TheBrandElement = () => {
+const BrandScreen = () => {
   return (
     <Wrapper></Wrapper>
   )
@@ -14,4 +14,4 @@ const Wrapper = styled(View)`
   align-self: center;
   background-color: lightgrey
 `
-export default TheBrandElement
+export default BrandScreen

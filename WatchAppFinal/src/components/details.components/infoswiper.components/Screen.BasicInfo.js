@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { View, Text } from 'react-native'
 
-const BasicInfoElement = (props) => {
+const BasicInfoScreen = (props) => {
   return (
     <Wrapper>
       <DetailWrapper>
@@ -58,4 +58,4 @@ const Detail = styled(Text)`
   paddingVertical: 5;
   
 `
-export default BasicInfoElement
+export default BasicInfoScreen

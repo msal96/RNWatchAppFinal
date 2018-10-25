@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { View, Text } from 'react-native'
 
-const FeaturesElement = (props) => {
+const FeaturesScreen = (props) => {
   return (
     <Wrapper>
       <Heading>Description</Heading>
@@ -27,4 +27,4 @@ const Description = styled(Text)`
   paddingHorizontal: 5;
   paddingVertical: 5;
 `
-export default FeaturesElement
+export default FeaturesScreen
