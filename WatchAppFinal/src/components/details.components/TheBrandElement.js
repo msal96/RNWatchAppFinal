@@ -4,15 +4,14 @@ import { View, Text } from 'react-native'
 
 const TheBrandElement = () => {
   return (
-    <TheBrandWrapper>
-      <Text>Brand</Text>
-    </TheBrandWrapper>
+    <Wrapper></Wrapper>
   )
 }
-const TheBrandWrapper = styled(View)`
-  background-color: green;
+
+const Wrapper = styled(View)`
   width: 82%;
   height: 100%;
   align-self: center;
+  background-color: lightgrey
 `
 export default TheBrandElement

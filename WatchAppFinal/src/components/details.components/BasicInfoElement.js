@@ -33,7 +33,6 @@ const Wrapper = styled(View)`
 
 `
 const Heading = styled(Text)`
-  font-weight: bold;
   font-family: Graphik-Medium;
   font-size: 15;
 `
