@@ -10,7 +10,6 @@ import Card from './Card'
 class CardList extends Component {
   render () {
     const { navigation, data } = this.props
-
     return (
       <Wrapper>
         {data.map((item, index) => (
@@ -19,6 +18,7 @@ class CardList extends Component {
             onPress={() => navigation.navigate('Details', { model: item })}
           >
             <Card
+              photos={item.Photos[0]}
               brand={item.Brand}
               model={item.Model}
               price={item.Price}

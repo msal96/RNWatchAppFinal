@@ -17,8 +17,18 @@ const SimilarWatches = () => {
       </HeaderWrapper>
 
       <CardWrapper>
-        <Card width = {width / 2.5} height = {height / 2.5}/>
-        <Card width = {width / 2.5} height = {height / 2.5}/>
+        <Card width = {width / 2.5} 
+              height = {height / 2.5} 
+              photos='https://cdn2.chrono24.com/images/uhren/images_76/s9/7196976gross.jpg?v=1' 
+              brand='IWC'
+              model='Sunspear'
+              price='$21,200'/>
+        <Card width = {width / 2.5} 
+              height = {height / 2.5} 
+              photos='https://cdn2.chrono24.com/images/uhren/images_76/s9/7196976gross.jpg?v=1' 
+              brand='IWC'
+              model='Sunspear'
+              price='$21,200'/>
       </CardWrapper>
     </Wrapper>
   )

@@ -7,16 +7,20 @@ let circle = (<Icon name='circle-outline' style='regular' size={15} color='black
 let square = (<Icon name='square-outline' style='regular' size={15} color='black' />)
 
 const BasicInfoScreen = (props) => {
+  const { BezelMaterial, Dial, Glass } = props.case
   return (
     <Wrapper>
       <DetailWrapper>
         <Heading>{circle} Case</Heading>
-        <Subheading>{Object.values(props.case).join(' ')}</Subheading>
+        <Subheading>Material: {BezelMaterial} </Subheading>
+        <Subheading>Glass: {Glass}</Subheading>
       </DetailWrapper>
 
       <DetailWrapper>
         <Heading>{square} Bracelet</Heading>
-        <Subheading>{Object.values(props.bracelet)}</Subheading>
+        <Subheading>
+          Bracelet Color: {props.bracelet.BraceletColor}
+        </Subheading>
       </DetailWrapper>
 
       <AdditionalDetails>

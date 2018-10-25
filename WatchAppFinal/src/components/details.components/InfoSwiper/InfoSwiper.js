@@ -17,7 +17,6 @@ class InfoSwiper extends Component {
 
   render () {
     const { caseInfo, bracelet, description } = this.props
-    console.log('[INFO SWIPER]:', this.props)
     return (
       <Wrapper>
         <Pagination index={this.state.index} />

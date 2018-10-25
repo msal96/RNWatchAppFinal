@@ -9,24 +9,26 @@ let icon = (<Icon name="heart-o" style='regular' size={25} color="#b6b6b6" />)
 const Card = ({
   brand,
   model,
-  // price,
+  photos,
+  price,
   width,
   height
-}) => (
+}) => {
+  return (
   <CardWrapper
     width={width}
     height={height}
   >
     <LikeButton>{icon}</LikeButton>
     <Photo
-      source={{ uri: 'https://images.rolex.com/catalogue/images/upright-bba-with-shadow/m228238-0042.png?impolicy=upright-majesty' }}
+      source={{ uri: photos }}
     />
     { brand ? <BrandName> { brand } </BrandName> : null}
     { model ? <ModelName> { model } </ModelName> : null}
-    {/* { price ? <Price> { price } </Price> : '$24,372'} */}
-    <Price> { '$24,372' } </Price>
+    { price ? <Price> { price } </Price> : <Text>$24,372</Text>}
   </CardWrapper>
 )
+}
 
 const CardWrapper = styled(View)`
   background-color: #fafafa;
