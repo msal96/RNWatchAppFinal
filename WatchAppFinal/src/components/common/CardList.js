@@ -10,7 +10,6 @@ import Card from './Card'
 class CardList extends Component {
   render () {
     const { navigation, data } = this.props
-    console.log('[CardListProps]', this.props)
 
     return (
       <Wrapper>

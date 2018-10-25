@@ -25,7 +25,7 @@ class InfoSwiper extends Component {
           showsPagination={false}
           onIndexChanged={(idx) => this.setState({index: idx})}
         >
-          <BasicInfoScreen />
+          <BasicInfoScreen case={caseInfo} bracelet={bracelet}/>
           <FeaturesScreen description={description} />
           <BrandScreen />
         </Swiper>

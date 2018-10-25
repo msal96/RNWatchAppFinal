@@ -19,6 +19,7 @@ export default class LandingScreen extends React.Component {
   }
   
   render () {
+    console.log('[RECEIVED DATA]:', this.state.data)
     return this.state.data 
     ? (<Wrapper>
         <SearchBar />

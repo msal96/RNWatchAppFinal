@@ -1,18 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
 import { View, Text } from 'react-native'
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
+
+let circle = (<Icon name='circle-outline' style='regular' size={15} color='black' />)
+let square = (<Icon name='square-outline' style='regular' size={15} color='black' />)
 
 const BasicInfoScreen = (props) => {
   return (
     <Wrapper>
       <DetailWrapper>
-        <Heading>Case</Heading>
-        <Subheading>Material + Color</Subheading>
+        <Heading>{circle} Case</Heading>
+        <Subheading>{Object.values(props.case).join(' ')}</Subheading>
       </DetailWrapper>
 
       <DetailWrapper>
-        <Heading>Bracelet</Heading>
-        <Subheading>Material + Color</Subheading>
+        <Heading>{square} Bracelet</Heading>
+        <Subheading>{Object.values(props.bracelet)}</Subheading>
       </DetailWrapper>
 
       <AdditionalDetails>
@@ -35,14 +39,16 @@ const Wrapper = styled(View)`
 const Heading = styled(Text)`
   font-family: Graphik-Medium;
   font-size: 15;
+  paddingHorizontal: 31;
+  paddingBottom: 2.5;
 `
 const Subheading = styled(Text)`
   font-family: Graphik-Regular;
   font-size: 15;
+  paddingHorizontal: 50;
 `
 const DetailWrapper = styled(View)`
   display: flex;
-  paddingHorizontal: 50;
   paddingVertical: 5;
 `
 const AdditionalDetails = styled(View)`
@@ -56,6 +62,5 @@ const Detail = styled(Text)`
   font-family: Graphik-Regular;
   font-size: 15;
   paddingVertical: 5;
-  
 `
 export default BasicInfoScreen
